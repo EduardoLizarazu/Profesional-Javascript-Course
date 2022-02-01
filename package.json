@@ -1,0 +1,25 @@
+{
+  "name": "profesional-javascript",
+  "version": "1.0.0",
+  "description": "Add to the video more plugins",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoLizarazu/Profesional-Javascript-Course"
+  },
+  "keywords": [
+    "javascript",
+    "video",
+    "pluggins",
+    "prototype",
+    "poo"
+  ],
+  "author": "Eduardo Lizarazu",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
