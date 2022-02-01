@@ -10,7 +10,9 @@ MediaPlayer.prototype._initPlugins = function() {
         plugin.run(this);
     });
 }
-
+MediaPlayer.prototype.play = function() {
+    this.media.play();
+}
 MediaPlayer.prototype.togglePlay = function() {
     this.media.paused 
         ? this.media.play()
