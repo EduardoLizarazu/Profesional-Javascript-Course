@@ -13,6 +13,5 @@ const player = new MediaPlayer({
 
 toggleButtonPlay.onclick = () =>  player.togglePlay();
 toggleButtonMute.onclick = () =>  player.toggleMute();
-// window.addEventListener("load", player.autoPlay())
 
 
