@@ -4,7 +4,7 @@
   "description": "Add to the video more plugins",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html typescript/index.html exercise/**/*.html"
+    "start": "parcel index.html designPattern/*.html"
   },
   "repository": {
     "type": "git",
