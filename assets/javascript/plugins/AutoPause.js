@@ -24,6 +24,7 @@ class AutoPause {
         // solution to the pause(undefine) problem, the cause was the this context
         // Now the context of this is the instance of the plugin
         this.handleIntersection = this.handleIntersection.bind(this);
+        this.handleVisibilityChange = this.handleVisibilityChange.bind(this);
     }
 
     run(player) {
@@ -32,15 +33,23 @@ class AutoPause {
         const observer = new IntersectionObserver(this.handleIntersection, this.threshold);
 
         observer.observe(this.player.media);
+
+        document.addEventListener("visibilitychange", this.handleVisibilityChange)
     }
 
     handleIntersection(entries) {
         // only observe ONE property
         const entry = entries[0];
 
-        const isVisibly = entry.intersectionRatio >= this.threshold.threshold;
+        const isVisible = entry.intersectionRatio >= this.threshold.threshold;
 
-        isVisibly
+        isVisible
+            ? this.player.play()
+            : this.player.pause();
+    }
+    handleVisibilityChange() {
+        const isVisible = document.visibilityState === "visible";
+        isVisible
             ? this.player.play()
             : this.player.pause();
     }
