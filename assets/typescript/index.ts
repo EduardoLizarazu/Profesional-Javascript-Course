@@ -1,6 +1,7 @@
 import MediaPlayer from "./MediaPlayer";
 import AutoPlay from "./plugins/AutoPlay"
 import AutoPause from "./plugins/AutoPause";
+import Ads from "./plugins/Ads";
 
 const  video: HTMLElement = document.querySelector("video");
 const  toggleButtonPlay: HTMLElement = document.querySelector("#TogglePlay");
@@ -8,7 +9,7 @@ const  toggleButtonMute: HTMLElement = document.querySelector("#ToggleMute");
 
 const player = new MediaPlayer({ 
     el:  video, 
-    plugins : [new AutoPlay(), new AutoPause()] 
+    plugins : [new AutoPlay(), new AutoPause(), new Ads()] 
 });
 
 toggleButtonPlay.onclick = () =>  player.togglePlay();
