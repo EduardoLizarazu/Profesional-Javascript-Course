@@ -1,0 +1,22 @@
+{
+  "name": "@eduardolizarazu/mediaplayer",
+  "version": "1.0.0",
+  "description": "Adding new features for the video tag",
+  "main": "lib/MediaPlayer.js",
+  "scripts": {
+    "build": "tsc src/**/*.ts src/plugins/*.ts src/plugins/**/*.ts --outDir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "play",
+    "video",
+    "ads",
+    "autoPause",
+    "autoPlay"
+  ],
+  "author": "Eduardo Lizarazu <jelo2021@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.5.5"
+  }
+}

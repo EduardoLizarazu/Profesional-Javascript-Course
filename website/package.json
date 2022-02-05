@@ -1,0 +1,30 @@
+{
+  "name": "profesional-javascript",
+  "version": "1.0.0",
+  "description": "Add to the video more plugins",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduardoLizarazu/Profesional-Javascript-Course"
+  },
+  "keywords": [
+    "javascript",
+    "video",
+    "pluggins",
+    "prototype",
+    "poo"
+  ],
+  "author": "Eduardo Lizarazu",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@eduardolizarazu/mediaplayer": "^1.0.0"
+  }
+}
